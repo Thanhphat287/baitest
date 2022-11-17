@@ -1,7 +1,15 @@
+import { AdminComponent } from './admin/admin.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-
-const routes: Routes = [];
+import { ThucDonComponent } from './thuc-don/thuc-don.component';
+import { MonAnComponent } from './mon-an/mon-an.component';
+import { NguoiDungComponent } from './nguoi-dung/nguoi-dung.component';
+const routes: Routes = [
+  {path:'thucdon', component:ThucDonComponent},
+  {path:'monan',component:MonAnComponent},
+  {path:'dangnhap',component:NguoiDungComponent},
+  {path:'admin',component:AdminComponent}
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
